@@ -21,9 +21,20 @@
 }
 
 .header__title {
+  font-size: 66px;
+  line-height: 76px;
+  font-weight: 500;
+  color: #000000;
+  margin: 128px 0 32px 0;
+  max-width: 601px;
 }
 
 .header__description {
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  margin: 0;
+  max-width: 522px;
 }
 
 .header__image {
@@ -51,18 +62,31 @@
 
 .nav {
   /* Add flex properties here */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .nav__logo {
+  width: 57px;
+  height: 80px;
 }
 
 .nav__links {
   /* Reset default list styles here */
   margin: 8px 0 0;
+  display: flex;
+  list-style-type: none;
+  column-gap: 20px;
 }
 
 .nav__link {
   color: #000000;
+  display: flex;
   text-decoration: none;
   font-weight: 500;
+}
+
+ul {
+  padding: 0;
 }
