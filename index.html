@@ -14,7 +14,6 @@
   </head>
 
   <body>
-    <!-- Wrap the entire page content in a new div with the page class. Remember to add the closing tag -->
     <div class="page">
       <header class="header">
         <nav class="nav">
@@ -25,19 +24,19 @@
           />
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Events</a>
+              <a href="#events" class="nav__link">Events</a>
             </li>
             <li>
-              <a class="nav__link">Staff picks</a>
+              <a href="#reader" class="nav__link">Reader picks</a>
             </li>
             <li>
-              <a class="nav__link">Become a member</a>
+              <a href="#membership" class="nav__link">Become a member</a>
             </li>
             <li>
-              <a class="nav__link">About</a>
+              <a href="#about" class="nav__link">About</a>
             </li>
             <li>
-              <a class="nav__link">Contacts</a>
+              <a href="#contacts" class="nav__link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -47,16 +46,14 @@
           your development knowledge, or just use this lovely spot to work or
           study. This is a cool place for cool students!
         </p>
-        <!-- ----------------------------------------------------------------- -->
-        <!--               Don't uncomment until project stage 2               -->
-        <!-- ----------------------------------------------------------------- -->
+
         <img
           src="./images/inside_the_library.svg"
           alt="Illustration 'Inside the library'"
           class="header__image"
         />
         <div class="header__footer">
-          <a class="header__link">About the library &darr;</a>
+          <a href="#about" class="header__link">About the library &darr;</a>
           <p class="header__address">
             200 Success Avenue, The Town of Triple Peaks
           </p>
@@ -64,7 +61,7 @@
       </header>
 
       <main class="content">
-        <section class="events">
+        <section id="events" class="events">
           <div class="events__content">
             <h2 class="events__heading">Upcoming events:</h2>
             <h3 class="events__title">
@@ -93,7 +90,7 @@
               prove that this hasn't been the case since at least the 18th
               century.
             </p>
-            <a href="#" class="events__more">More events &rarr;</a>
+            <a href="#events" class="events__more">More events &rarr;</a>
           </div>
           <div class="events__cover">
             <img
@@ -144,7 +141,7 @@
           </div>
         </section>
 
-        <section class="staff">
+        <section id="reader" class="staff">
           <h2 class="staff__title">Reader picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <ul class="staff__cards">
@@ -224,7 +221,7 @@
           </ul>
         </section>
 
-        <section class="membership">
+        <section id="membership" class="membership">
           <h2 class="membership__title">Becoming a library member is easy!</h2>
           <ul class="membership__steps">
             <li class="step">
@@ -279,7 +276,7 @@
             </li>
           </ul>
         </section>
-        <section class="about">
+        <section id="about" class="about">
           <img
             class="about__image"
             src="./images/cafe-about.svg"
@@ -307,7 +304,7 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer id="contacts" class="footer">
         <div class="footer__columns">
           <div class="footer__column">
             <img

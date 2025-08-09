@@ -1,5 +1,4 @@
 .page {
-  /* Add page class properties here */
   min-width: 1300px;
   max-width: 1600px;
   justify-content: center;
@@ -59,13 +58,17 @@
   text-decoration: none;
 }
 
+.header__link:hover {
+  color: #d35722;
+  cursor: pointer;
+}
+
 .header__address {
   margin: 0;
   color: #838383;
 }
 
 .nav {
-  /* Add flex properties here */
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -77,7 +80,6 @@
 }
 
 .nav__links {
-  /* Reset default list styles here */
   margin: 8px 0 0;
   display: flex;
   list-style-type: none;
@@ -89,6 +91,11 @@
   display: flex;
   text-decoration: none;
   font-weight: 500;
+}
+
+.nav__link:hover {
+  color: #d35722;
+  cursor: pointer;
 }
 
 ul {
@@ -165,6 +172,11 @@ ul {
   text-decoration: none;
 }
 
+.events__more:hover {
+  color: #d35722;
+  cursor: pointer;
+}
+
 .events__cover {
   flex-grow: 1;
   flex-shrink: 0;
@@ -235,7 +247,7 @@ ul {
   font-size: 14px;
   margin: 0;
 }
-/* Final CSS */
+
 .staff {
   padding: 100px 0 140px;
   background-image: url(../images/staff_picks_background.jpg);
@@ -271,8 +283,6 @@ ul {
   margin: 0 0 68px;
   color: #fff;
 }
-
-/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 
 .card {
   background-color: #fff;
@@ -430,7 +440,6 @@ ul {
 }
 
 .footer__list {
-  /* The code below removes the default browser styles for lists */
   list-style-type: none;
   padding: 0;
   margin: 0;
