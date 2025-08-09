@@ -301,8 +301,15 @@ ul {
   margin: 20px 0 0;
   font-size: 16px;
   line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
+.card__text:hover {
+  overflow: visible;
+  background-color: #f6dbdb;
+  z-index: 1;
+}
 .card__footer {
   margin: 0;
   font-size: 14px;
