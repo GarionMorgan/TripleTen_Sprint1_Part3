@@ -1,8 +1,8 @@
 .page {
   min-width: 1300px;
   max-width: 1600px;
-  justify-content: center;
-  font-family: "Helvetica Neue, Arial, sans-serif";
+  /*Corrected the use of font-family*/
+  font-family: "Helvetica Neue", "Arial", "sans-serif";
   font-size: 16px;
   line-height: 20px;
   margin: 0 auto;
@@ -92,14 +92,14 @@
   text-decoration: none;
   font-weight: 500;
 }
+/*Corrected the ul to include padding to nav_link*/
+.nav__link_ul {
+  padding: 0;
+}
 
 .nav__link:hover {
   color: #d35722;
   cursor: pointer;
-}
-
-ul {
-  padding: 0;
 }
 
 .events {
@@ -251,7 +251,8 @@ ul {
 .staff {
   padding: 100px 0 140px;
   background-image: url(../images/staff_picks_background.jpg);
-  background-size: contain;
+  /*Corrected to have image cover the whole section*/
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -466,6 +467,8 @@ ul {
   text-decoration: none;
   display: flex;
   gap: 10px;
+  /*Added align items to align icon and the text inside the link vertically*/
+  align-items: center;
 }
 
 .footer__column-link:hover {
